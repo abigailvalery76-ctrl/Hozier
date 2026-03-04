@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Garamond', serif;
+    background: linear-gradient(135deg, #e8d4f8 0%, #d4e4f7 50%, #c8dff0 100%);
+    color: #4a4a4a;
+    min-height: 100vh;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(138, 43, 226, 0.15);
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #8b7ec8 0%, #6b9bc5 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.3em;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+main {
+    padding: 40px 30px;
+}
+
+.greeting {
+    text-align: center;
+    font-size: 1.2em;
+    color: #6b9bc5;
+    margin-bottom: 50px;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+.hearts-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.heart-card {
+    background: linear-gradient(135deg, #f0e8ff 0%, #e8f2ff 100%);
+    border-left: 5px solid #8b7ec8;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 5px 15px rgba(138, 43, 226, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heart-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(138, 43, 226, 0.2);
+}
+
+.heart-card h2 {
+    color: #8b7ec8;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.heart-card p {
+    color: #5a5a5a;
+    line-height: 1.7;
+}
+
+.divider {
+    font-size: 2em;
+    color: #8b7ec8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gratitude-list {
+    background: linear-gradient(135deg, #e8f2ff 0%, #f0e8ff 100%);
+    padding: 35px;
+    border-radius: 10px;
+    margin: 40px 0;
+    border: 2px solid #c8dff0;
+}
+
+.gratitude-list h2 {
+    color: #6b9bc5;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.gratitude-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gratitude-list li {
+    padding: 12px 0;
+    padding-left: 30px;
+    position: relative;
+    color: #4a4a4a;
+    font-size: 1.05em;
+}
+
+.gratitude-list li:before {
+    content: "♡";
+    position: absolute;
+    left: 0;
+    color: #8b7ec8;
+    font-size: 1.2em;
+}
+
+.message {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 1.3em;
+    color: #8b7ec8;
+    border-top: 2px dashed #c8dff0;
+    border-bottom: 2px dashed #c8dff0;
+    margin: 40px 0;
+}
+
+.footer {
+            margin-top: 40px;
+        }
+
+        .footer p {
+            font-size: 16px;
+            color: #906ab8;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+.signature {
+            font-size: 18px;
+            color: #983fd4;
+            font-family: 'Brush Script MT', cursive;
+            margin-top: 20px;
+        }
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    main {
+        padding: 25px 15px;
+    }
+
+    .hearts-container {
+        flex-direction: column;
+    }
+
+    .heart-card {
+        min-width: 100%;
+    }
+
+    .gratitude-list {
+        padding: 20px;
+    }
+
+    .gratitude-list li {
+        font-size: 0.95em;
+    }
+}
